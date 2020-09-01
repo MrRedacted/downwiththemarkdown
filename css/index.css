@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+:root {
+  font-size: 62.5%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, #app {
+  margin: 0;
+}
+
+#main_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: #0B0C10;
+  padding: 0;
+}
+
+#edit_wrapper, #preview_wrapper {
+  width: 40vw;
+  height: 90vh;
+  margin: 5vh 3.5vw;
+  border-radius: .8rem;
+  border: solid #66FCF1 0.2rem;
+  background-color: #1F2833;
+  color: #0B0C10;
+  -webkit-box-shadow: 0 0 0.6rem 0.3rem #66FCF1;
+          box-shadow: 0 0 0.6rem 0.3rem #66FCF1;
+}
+
+.headbar {
+  width: 100%;
+  height: 10%;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #45A29E;
+  color: #0B0C10;
+  border-radius: .6rem .6rem 0 0;
+  font-weight: bold;
+}
+
+#editor, #preview {
+  height: 90%;
+  resize: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 2rem;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #1F2833;
+  color: #C5C6C7;
+  border-radius: 0 0 .6rem .6rem;
+}
+
+#editor:focus, #preview:focus {
+  outline: none;
+}
+
+#editor {
+  font-size: 2rem;
+}
+
+#preview {
+  font-size: 1.7rem;
+}
+
+#preview a {
+  color: #66FCF1;
+}
+
+#preview a:visited {
+  color: #66FCF1;
+}
+
+#preview h1 {
+  border-bottom: solid .3rem;
+  margin-bottom: 2rem;
+}
+
+#preview h2 {
+  border-bottom: solid .2rem;
+  margin-bottom: 2rem;
+}
+
+#preview h3 {
+  border-bottom: dashed .1rem;
+  margin-bottom: 2rem;
+}
+
+#preview blockquote {
+  margin: 2rem 0 2rem 2.5rem;
+  border-left: 0.3rem solid #45A29E;
+  color: #45A29E;
+  padding-left: .5rem;
+}
+
+#preview code {
+  background: #C5C6C7;
+  color: #0B0C10;
+  padding: .1rem .4rem .2rem .4rem;
+}
+
+#preview pre {
+  margin: 1rem 0;
+  background: #C5C6C7;
+  color: #0B0C10;
+  padding: .5rem 0 .5rem .5rem;
+}
+
+#preview table {
+  border-collapse: collapse;
+}
+
+#preview td,
+#preview th {
+  border: 0.2rem solid #66FCF1;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+#preview li {
+  list-style-position: inside;
+}
+
+#preview img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+@media (max-width: 700px) {
+  :root {
+    font-size: calc(62.5% * .75);
+  }
+  #main_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #edit_wrapper, #preview_wrapper {
+    width: 80vw;
+    height: 90vh;
+    margin: 5rem auto;
+    scrollbar-width: none;
+  }
+  #editor, #preview {
+    overflow-y: visible;
+  }
+}
+/*# sourceMappingURL=index.css.map */
